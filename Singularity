@@ -1,9 +1,9 @@
 BootStrap: docker
-From: ubuntu:16.04
+From: ubuntu:18.04
 
 %labels
-  Maintainer Jeremy Nicklas
-  R_Version 3.6.2
+  Maintainer Jared Andrews
+  R_Version 4.0.2
 
 %apprun R
   exec R "${@}"
@@ -16,7 +16,7 @@ From: ubuntu:16.04
 
 %post
   # Software versions
-  export R_VERSION=3.6.2
+  export R_VERSION=4.0.2
 
   # Get dependencies
   apt-get update
