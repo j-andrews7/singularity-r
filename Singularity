@@ -60,6 +60,7 @@ From: ubuntu:16.04
   echo "R_LIBS_SITE=/library:\${R_LIBS_SITE}" >> /usr/lib/R/etc/Renviron.site
 
   # Update python
+  add-apt-repository ppa:deadsnakes/ppa
   apt-get install -y python3.8 python3.8-dev python3.8-distutils python3.8-venv
 
   # Create/activate virtualenv
