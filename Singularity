@@ -62,6 +62,7 @@ From: ubuntu:16.04
 
   # Update python
   add-apt-repository ppa:deadsnakes/ppa
+  apt update
   apt-get install -y python3.8 python3.8-dev python3.8-distutils python3.8-venv
 
   # Create/activate virtualenv
