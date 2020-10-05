@@ -59,12 +59,12 @@ From: ubuntu:16.04
   mkdir -p /library
   echo "R_LIBS_SITE=/library:\${R_LIBS_SITE}" >> /usr/lib/R/etc/Renviron.site
 
-  # Clean up
-  rm -rf /var/lib/apt/lists/*
-
   # Update python
   apt-get install -y python3.8 python3.8-dev python3.8-distutils python3.8-venv
 
   # Create/activate virtualenv
   python3.8 -m venv dev3.8/
   source dev3.8/bin/activate
+
+  # Clean up
+  rm -rf /var/lib/apt/lists/*
