@@ -50,7 +50,8 @@ From: ubuntu:16.04
     libfreetype6-dev \
     libtiff5-dev \
     libjpeg-dev \
-    libgsl-dev
+    libgsl-dev \
+    software-properties-common
 
   # Add a default CRAN mirror
   echo "options(repos = c(CRAN = 'https://cran.rstudio.com/'), download.file.method = 'libcurl')" >> /usr/lib/R/etc/Rprofile.site
