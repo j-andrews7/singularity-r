@@ -67,7 +67,7 @@ From: ubuntu:16.04
 
   # Create/activate virtualenv
   python3.8 -m venv dev3.8/
-  source dev3.8/bin/activate
+  . dev3.8/bin/activate
 
   # Clean up
   rm -rf /var/lib/apt/lists/*
